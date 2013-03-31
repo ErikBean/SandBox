@@ -11,3 +11,90 @@
  *= require_self
  *= require_tree .
  */
+body {
+   background: #A65022; 
+   /*font-size: small;*/
+   font-family: "Lucida Grande", sans-serif;
+   margin:0;
+
+}
+#titleWrap{
+    float:left;
+    padding:10px 0 10px 0;
+    margin:0;
+    background: #A65022 url('lizard-nobgAlt.gif') repeat-x bottom left;  
+    width:100%;
+    float:left;
+}
+
+#title{
+    float:right;
+    background: url('lizard-nobg.gif') bottom right no-repeat; 
+    color:#FFFBAD;
+    text-align: left;
+    font-family: Helvetica;
+    font-size: 300%;
+text-shadow: 2px 2px 4px #000;
+
+    margin:0;
+    padding:0;
+    width:65%;
+    float:right;
+    height: 100px;
+/*    min-width: 410px;*/
+}
+
+#breaker{
+    clear:both;
+    width:100%;
+}
+/*100% width + left float makes list horizontal.
+ floating nav container pulls it out of the pageflow and keeps li floats inside
+ so that they share container's BG color too*/
+#nav{
+    float:left;
+
+    background: #A65022 url('nav_bg.gif') repeat-x bottom left;
+    width:100%;
+/*    height:100px;*/
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-size: 100%;
+}
+/*all li elements inside nav get this style. This works kind of like classes.
+ we can think of everything within nav as sharing the nav "class"*/
+#nav li{
+    float:left;
+/*    font-family: "Lucida Grande", sans-serif;*/
+/*set whole page to this^*/
+    margin:0;
+    padding:0;
+/*    background: url('nav_bg.gif') repeat-x bottom left;*/
+}
+#indent{
+ /*   float:right;*/
+    width:8%;
+    height:1%;
+}
+/*all a elements in nav*/
+#nav a{
+    float:left;
+    display:block;/*makes entire tab clickable*/
+    margin:0 15px 0 0;
+    padding: 5px 8px;
+    color: #FFF;
+    text-decoration: none;/*no link underlines etc*/
+    border: 1px solid #16185E;
+    
+    /*light blue. if big text in tabs, gradient bg gets pushed up to reveal this.*/
+    background:  #75B6FF url('tabBgActive.gif') repeat-x top left;
+}
+
+#nav a:hover, body#intro #t-intro a, body#news #t-news a{
+    color:#333;
+    padding-bottom:6px;
+border-bottom:none;/*joins bottom of tab to page body*/
+/*    border-color:#727377;*/
+    background: #DBDBDB url('tabBgInactive.gif') repeat-x top left;
+}

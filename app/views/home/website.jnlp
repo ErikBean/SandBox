@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="" href="">
+    <information>
+        <title>Hello</title>
+        <vendor>Dynamic Dudesw</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.6+"
+            href="http://java.sun.com/products/autodl/j2se" />
+        <jar href="/home/legumebo/Code/workspace/website/bin/applet.jar" main="true" />
+
+    </resources>
+    <applet-desc 
+         name="Dynamic Tree Demo Applet"
+         main-class="components.applet"
+         width="300"
+         height="300">
+     </applet-desc>
+     <update check="background"/>
+</jnlp> 
